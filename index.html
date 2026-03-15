@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href={{ url_for("static",filename="css/style.css")}} >
+    <script type="text/javascript" src={{ url_for("static",filename="script/script.js")}}>
+    </script>
+    </head>
+
+<div class="container">
+<body>
+    <h1>Welcome to my page</h1>
+    <h2>check your results with smile</h2>
+
+    <form action="/submit" method="POST">
+        <label for="science">SCIENCE :</label><br>
+        <input type="text" id="science" name="science" value="0"><br>
+
+        <label for="maths">MATHS :</label><br>
+        <input type="text" id="maths" name="maths" value="0"><br>
+
+        <label for="datascience">DATASCIENCE :</label><br>
+        <input type="text" id="datascience" name="datascience" value="0"><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+   </div>
+</body>
+</html>
